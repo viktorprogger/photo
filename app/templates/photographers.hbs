@@ -1,2 +1,12 @@
 <h1>List of photographers</h1>
 
+<ul>
+    {{#each this.model as |photographer|}}
+        <li>
+            <img src={{photographer.avatar}} alt={{photographer.name}}>
+            <a href="#">{{photographer.name}}</a>
+            {{protographer.experience}} лет опыта
+            <br>
+        </li>
+    {{/each}}
+</ul>

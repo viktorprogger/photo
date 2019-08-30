@@ -12,5 +12,6 @@ export default Model.extend({
     portfolio: DS.hasMany('portfolio'),
     experience: computed('yearStart', function() {
         return new Date().getFullYear() - this.yearStart;
-    })
+    }),
+    test: () => {return 'working'}
 });

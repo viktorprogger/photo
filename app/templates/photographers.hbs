@@ -3,13 +3,11 @@
     <ul>
         {{#each this.model as |photographer|}}
             <li>
-                <img src={{photographer.avatar}} alt={{photographer.name}}>
-                <a href="#">{{photographer.name}}</a>
+                <img src={{ photographer.avatar }} alt={{ photographer.name }}>
+                <a href="#">{{ photographer.name }}</a>
                 <br>
-                Начал в {{ protographer.yearStart }} г.
-                {{ protographer.experience }} лет опыта
-                <br>
-                {{protographer.test}}
+                Начал в {{ photographer.yearStart }} г.,
+                {{ photographer.experience }} лет опыта
             </li>
         {{/each}}
     </ul>

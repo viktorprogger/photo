@@ -13,5 +13,4 @@ export default Model.extend({
     experience: computed('yearStart', function() {
         return new Date().getFullYear() - this.yearStart;
     }),
-    test: () => {return 'working'}
 });
